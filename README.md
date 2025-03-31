@@ -24,3 +24,17 @@ The gain bit
 Where the sound comes out
 - **Level:** loudosity
 - **Cabinet:** a low pass filter to simulate a speaker response.  There are so many EQ controls already that I think a bunch more for a cabsim would be ludicrous.  This is simply a lowpass fitler with a variable cutoff between 3000 and 6000 Hz.
+
+## Some Technical Bits for the Nerds
+This was built in PlugData which is a fun wrapper for PureData that makes it a bit easier to use.  It also allows you to export C++ code via the HeavyCompiler which is exactly what i did.  This then interfaces in a slightly wobbly way with JUCE - a library for making audio software.  It all worked pretty well and I learned a lot!
+
+## Where Can I Find All the Stuff?
+The VST is found in the VST folder along with the original PlugData patch for reference.  You will need PlugData to open this (even though its a .pd) as it needs a few specific libraries.
+
+The source folder holds everything you will need to view C++ code.  The important files are in the top level of this folder - HeavyFiles contains all the compiled code from the PD patch and is probably a bit esoteric.  All of the actual DSP is done in those but the "pluginProcessor.cpp" file handles the mediation.  If you want to mod this or play around you will need to build a project using the Projucer (the JUCE project manager) or CMake or something.  The JUCE library files are in there for that reason but I wouldn't play with them.
+
+## Some Stuff for Future Versions
+I think the level controls and gain staging are a bit shagged so will sort this out soon.
+Maybe a mid control for the cab sim?  I'm feeling a "no" on this one...
+Is the colour scheme too jazzy?
+
