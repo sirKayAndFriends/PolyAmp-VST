@@ -63,7 +63,8 @@ The VST is found in the VST folder along with the original PlugData patch for re
 The source folder holds everything you will need to view C++ code.  The important files are in the top level of this folder - HeavyFiles contains all the compiled code from the PD patch and is probably a bit esoteric.  All of the actual DSP is done in those but the "pluginProcessor.cpp" file handles the mediation.  If you want to mod this or play around you will need to build a project using the Projucer (the JUCE project manager) or CMake or something.  The JUCE library files are in there for that reason but I wouldn't play with them.
 
 ## Some Stuff for Future Versions
-I think the level controls and gain staging are a bit shagged so will sort this out soon.
-Maybe a mid control for the cab sim?  I'm feeling a "no" on this one...
-Is the colour scheme too jazzy?
+- I think the level controls and gain staging are a bit shagged so will sort this out soon.
+- Maybe a mid control for the cab sim?  I'm feeling a "no" on this one...
+- Is the colour scheme too jazzy?
+- Some sort of peak meter?
 
