@@ -28,6 +28,8 @@ Where the sound comes out
 ## Some Technical Bits for the Nerds
 This was built in PlugData which is a fun wrapper for PureData that makes it a bit easier to use.  It also allows you to export C++ code via the HeavyCompiler which is exactly what i did.  This then interfaces in a slightly wobbly way with JUCE - a library for making audio software.  It all worked pretty well and I learned a lot!
 
+I learned how to do the Heavy bits from [this repo](https://github.com/o-g-sus/JUCE-HEAVY) which very helpfully goes through how it all works.  My code ended up being a bit different (as there are a million ways to do even the simplest things in C) but I owe a lot to this work!
+
 ## Where Can I Find All the Stuff?
 The VST is found in the VST folder along with the original PlugData patch for reference.  You will need PlugData to open this (even though its a .pd) as it needs a few specific libraries.
 
