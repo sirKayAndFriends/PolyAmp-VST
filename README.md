@@ -25,6 +25,33 @@ Where the sound comes out
 - **Level:** loudosity
 - **Cabinet:** a low pass filter to simulate a speaker response.  There are so many EQ controls already that I think a bunch more for a cabsim would be ludicrous.  This is simply a lowpass fitler with a variable cutoff between 3000 and 6000 Hz.
 
+## Suggestions for Getting Started
+**Fender-y niceness**
+- Boost @ 9 o'clock (this is a nice fender scoop but push it for a more "tweedy" sound)
+- Peak @ 400 (this will give you the fendery thing with a scoop or boost, but I also like a 2400 treble boostery thing here too)
+- Bass @ noon, Treble @ 3 o'clock
+- Voice @ 400
+- Mids sounds good anywhere - under noon = 60s, above noon = 50s
+- gain under noon
+- cabinet above noon 
+
+**Sort of Hendrix-y Marshall-y**
+- Boost @ 3 o'clock
+- Peak @ 2400
+- Voice @ 850
+- Bass and Treble @ noon
+- Mids @ 2 o'clock
+- Gain @ 12 o'clock
+- Cabinet @ 12 o'clock
+
+**Big Heavy Metal Sound**
+- Boost @ 3 o'clock
+- Peak @ 740
+- Voice @ 850
+- Tone to Taste (I like mids pushed a little)
+- Gain @ 2 o'clock
+- Cabinet below noon
+
 ## Some Technical Bits for the Nerds
 This was built in PlugData which is a fun wrapper for PureData that makes it a bit easier to use.  It also allows you to export C++ code via the HeavyCompiler which is exactly what i did.  This then interfaces in a slightly wobbly way with JUCE - a library for making audio software.  It all worked pretty well and I learned a lot!
 
