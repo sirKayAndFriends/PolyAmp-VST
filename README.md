@@ -32,8 +32,8 @@ Where the sound comes out
 - Bass @ noon, Treble @ 3 o'clock
 - Voice @ 400
 - Mids sounds good anywhere - under noon = 60s, above noon = 50s
-- gain under noon
-- cabinet above noon 
+- Gain under noon
+- Cabinet above noon 
 
 **Sort of Hendrix-y Marshall-y**
 - Boost @ 3 o'clock
